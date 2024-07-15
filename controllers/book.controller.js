@@ -11,12 +11,6 @@ module.exports = {
     },
     addBook: async (req, res, next) => {
         console.log(req.body);
-        // there are 2 method save and create to add any entries 
-        // const book = new Book(req.body);
-        // book.save(function(err, result) {
-        //     if (err) throw err;
-        //     return res.json(result);
-        // })
 
         try {
             const book = await bookService.addBook(req.body, next);
@@ -24,7 +18,6 @@ module.exports = {
         } catch (e) {
             console.log(e.toString());
         }
-        //res.json({message: "book added successfully."});
     },
 
     purchaseBook: async (req, res, next) => {
