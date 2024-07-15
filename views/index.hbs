@@ -1,16 +1,43 @@
-<div class="jumbotron text-center">
-    <h1>{{title}}</h1>
+<div
+  class='jumbotron text-center'
+  style='background-color: #343a40; color: #ffffff;'
+>
+  <h1>{{title}}</h1>
 </div>
-<div class="container" style="background-color: aliceblue; padding: 10px">
-    <div class="row text-center">
-        <div class="col-sm-3">
-            Total Registerd User {{user_count}}
+<div class='container' style='padding: 20px;'>
+  <div class='row text-center'>
+    <div class='col-sm-4'>
+      <div
+        class='card'
+        style='background-color: #f8f9fa; border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);'
+      >
+        <div class='card-body'>
+          <h3 class='card-title' style='color: #007bff;'>Total Registered Users</h3>
+          <p class='card-text' style='font-size: 1.5em;'>{{user_count}}</p>
         </div>
-        <div class="col-sm-3">
-            Total books Available {{book_count}}
-        </div>
-        <div class="col-sm-3">
-            Total genres Available {{genre_count}}
-        </div>
+      </div>
     </div>
+    <div class='col-sm-4'>
+      <div
+        class='card'
+        style='background-color: #f8f9fa; border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);'
+      >
+        <div class='card-body'>
+          <h3 class='card-title' style='color: #28a745;'>Total Books Available</h3>
+          <p class='card-text' style='font-size: 1.5em;'>{{book_count}}</p>
+        </div>
+      </div>
+    </div>
+    <div class='col-sm-4'>
+      <div
+        class='card'
+        style='background-color: #f8f9fa; border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);'
+      >
+        <div class='card-body'>
+          <h3 class='card-title' style='color: #dc3545;'>Total Genres Available</h3>
+          <p class='card-text' style='font-size: 1.5em;'>{{genre_count}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -13,3 +13,20 @@ form {
     background-color: aliceblue;
     padding: 10px;
 }
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-weight: bold;
+}
