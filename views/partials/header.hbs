@@ -1,24 +1,39 @@
-<nav class="navbar navbar-inverse" style="background-color: #343a40; border-color: #343a40;">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/" style="color: #ffffff;">LMS</a>
-        </div>
-        <ul class="nav navbar-nav">
-            {{#if admin}}
-            <li><a href="/book/add-book" style="color: #ffffff;">Add Books</a></li>
-            {{/if}}
-            <li><a href="/book" style="color: #ffffff;">Books</a></li>
-        </ul>
-        {{#if loggedIn}}
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="/user/profile" style="color: #ffffff;"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-            <li><a href="/user/logout" style="color: #ffffff;"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-        </ul>
-        {{else}}
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="/user/signup" style="color: #ffffff;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="/user/login" style="color: #ffffff;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-        {{/if}}
+<nav
+  class='navbar navbar-inverse'
+  style='background-color: #343a40; border-color: #343a40;'
+>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <a class='navbar-brand' href='/' style='color: #ffffff;'>LMS</a>
     </div>
+    <ul class='nav navbar-nav'>
+      {{#if admin}}
+        <li><a href='/book/add-book' style='color: #ffffff;'>Add Books</a></li>
+      {{/if}}
+      <li><a href='/book' style='color: #ffffff;'>Books</a></li>
+    </ul>
+    {{#if loggedIn}}
+      <ul class='nav navbar-nav navbar-right'>
+        <li><a href='/user/profile' style='color: #ffffff;'><span
+              class='glyphicon glyphicon-user'
+            ></span>
+            Profile</a></li>
+        <li><a href='/user/logout' style='color: #ffffff;'><span
+              class='glyphicon glyphicon-log-out'
+            ></span>
+            Logout</a></li>
+      </ul>
+    {{else}}
+      <ul class='nav navbar-nav navbar-right'>
+        <li><a href='/user/signup' style='color: #ffffff;'><span
+              class='glyphicon glyphicon-user'
+            ></span>
+            Sign Up</a></li>
+        <li><a href='/user/login' style='color: #ffffff;'><span
+              class='glyphicon glyphicon-log-in'
+            ></span>
+            Login</a></li>
+      </ul>
+    {{/if}}
+  </div>
 </nav>
