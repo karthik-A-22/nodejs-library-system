@@ -1,22 +1,30 @@
 body {
     background-image: url("https://images.unsplash.com/photo-1622128969605-819cbd8cc23c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 50px;
+    color: #fff;
 }
 
-.book-item {
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 5px;
-    background-color: aliceblue;
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
 }
 
+.book-item,
 form {
-    background-color: aliceblue;
-    padding: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
 }
 
 .card {
     border-radius: 10px;
     transition: transform 0.2s;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -25,8 +33,22 @@ form {
 
 .card-title {
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .card-text {
     font-weight: bold;
+    color: #343a40;
+}
+
+.alert {
+    background-color: rgba(0, 123, 255, 0.85);
+    color: white;
+    border-radius: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
